@@ -1,3 +1,17 @@
 module or(input a,b output c)
 assign c = a|b;
 endmodule
+
+module or_tb
+reg a,b;
+reg c;
+or uut(.a(a),.b(b),.c(c));
+intial begin
+$monitor("time =%t, a=%b ,b=%b, c=%c",$time,a,b,c)
+a=1'b0;b=1'b0 #5
+a=1'b0;b=1'b1 #5
+a=1'b1;b=1'b0 #5
+a=1'b1;b=1'b1 #5
+$stop;
+end 
+endmodule
