@@ -4,3 +4,12 @@ assign b=1'b0;
 assign c=a&b;
 endmodule
 
+module and_tb
+reg a,b;
+wire y;
+and uut(.a(a),.b(b),.c(C));
+intial begin
+$display("value of a=%b,b=%b and c = %b",a,b,c);
+end 
+endmodule
+
