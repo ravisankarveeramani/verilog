@@ -1,1 +1,6 @@
 module and(input a,b output c)
+assign a=1'b1;
+assign b=1'b0;
+assign c=a&b;
+endmodule
+
