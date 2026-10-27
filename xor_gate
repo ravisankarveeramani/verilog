@@ -1,3 +1,4 @@
+#module for xor
 module xor(input a,b, output c)
 assign c = a^b;
 endmodule
