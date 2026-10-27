@@ -1,4 +1,4 @@
-
+#module for xnor 
 module xor(input a,b, output c)
 assign c = !(a^b);
 endmodule
